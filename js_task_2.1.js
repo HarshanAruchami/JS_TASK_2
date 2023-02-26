@@ -1,14 +1,14 @@
 const friends = ["Harshan", "Hemanth", "Shiva", "Surya", "Ram", "Nandha"];
 document.write("a] " + friends + "<br>" + "<br>" + "<br>" + "<br>" + "<br>");
 //unshift
-let front = prompt("b] Enter your friend name to be added in front:");
+let addfront = prompt("b] Enter your friend name to be added in front:");
 document.write("b] UNSHIFT OPERATION " + "<br>");
-friends.unshift(front);
+friends.unshift(addfront);
 document.write(friends + "<br>" + "<br>" + "<br>" + "<br>");
 //push
-let end = prompt("c] Enter your friend name to be added at the end:");
+let addend = prompt("c] Enter your friend name to be added at the end:");
 document.write("c] PUSH OPERATION " + "<br>");
-friends.push(end);
+friends.push(addend);
 document.write(friends + "<br>" + "<br>" + "<br>" + "<br>");
 //shift
 document.write("d] SHIFT OPERATION " + "<br>");
