@@ -1,4 +1,5 @@
-  function login() {
+  function login() 
+  {
    const uname = document.getElementById("inputusername").value;
    const password = document.getElementById("inputPassword").value;
    const CPassword = document.getElementById("inputconfirmPassword").value;

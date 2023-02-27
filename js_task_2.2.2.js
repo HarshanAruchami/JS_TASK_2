@@ -1,4 +1,5 @@
-function checkage() {
+function checkage() 
+{
   const fName = document.getElementById("f_name").value;
   const lName = document.getElementById("s_name").value;
   const dob = document.getElementById("dob").value;
