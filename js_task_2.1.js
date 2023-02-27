@@ -48,10 +48,10 @@ friends.forEach(function (name) {
 document.write("<br>");
 document.write(
   " g] Separated all the names by comma and printed it" +
-    "<br>" +
-    friends +
-    "<br>" +
-    "<br>" 
+  "<br>" +
+  friends +
+  "<br>" +
+  "<br>"
 );
 //date and time
 document.write("h] Date and Time" + "<br>" + "<br>");

@@ -1,29 +1,28 @@
-function votecheck() {
-  const firstName = document.getElementById("first").value;
-  const lastName = document.getElementById("second").value;
+function checkage() {
+  const fName = document.getElementById("f_name").value;
+  const lName = document.getElementById("s_name").value;
   const dob = document.getElementById("dob").value;
-  var maleRadio = document.getElementById("flexRadioDefault1");
-  var femaleRadio = document.getElementById("flexRadioDefault2");
-  var othersRadio = document.getElementById("flexRadioDefault3");
-  var gender = "";
+  var rmale = document.getElementById("maler");
+  var rfemale = document.getElementById("femaler");
+  var gender = " ";
 
-  if (maleRadio.checked) {
+  if (rmale.checked) {
     gender = "male";
-  } else if (femaleRadio.checked) {
+  } else if (rfemale.checked) {
     gender = "female";
   } else {
     gender = "others";
   }
 
-  var dateRegex = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
+  var dateform = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
 
-  if (!firstName || !lastName || !dob || !gender) {
-    alert("Fields cannot be empty..!");
+  if (!fName || !lName || !dob || !gender) {
+    alert("Fields cannot be left empty..!");
     return false;
-  } else if (!isNaN(firstName) || !isNaN(lastName)) {
+  } else if (!isNaN(fName) || !isNaN(lName)) {
     alert("Name should contain only letters..!");
     return false;
-  } else if (!dob.match(dateRegex)) {
+  } else if (!dob.match(dateform)) {
     alert("Please enter a valid date format (mm/dd/yyyy)");
     return false;
   } else {
@@ -36,21 +35,21 @@ function votecheck() {
     }
     if (age >= 18) {
       alert(
-        firstName.toUpperCase() +
-          " " +
-          lastName.toUpperCase() +
-          "  age  " +
-          age +
-          " is able to vote this year"
+        fName.toUpperCase() +
+        " " +
+        lName.toUpperCase() +
+        "  age  " +
+        age +
+        " is able to vote this year"
       );
     } else {
       alert(
-        firstName.toUpperCase() +
-          " " +
-          lastName.toUpperCase() +
-          "  age  " +
-          age +
-          ", you have to wait to reach 18 years"
+        fName.toUpperCase() +
+        " " +
+        lName.toUpperCase() +
+        "  age  " +
+        age +
+        ", wait to reach 18 years"
       );
     }
     return true;
