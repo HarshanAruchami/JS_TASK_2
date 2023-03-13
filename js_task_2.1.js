@@ -10,6 +10,11 @@ let addend = prompt("c] Enter your friend name to be added at the end:");
 document.write("c] PUSH OPERATION " + "<br>");
 friends.push(addend);
 document.write(friends + "<br>" + "<br>" + "<br>" + "<br>");
+//splice
+let addcen = prompt("Enter the word to add at center of the array")
+document.write("e] SPLICE OPERATION " + "<br>");
+friends.splice(2,0,addcen);
+document.write(friends + "<br>" + "<br>" + "<br>");
 //shift
 document.write("d] SHIFT OPERATION " + "<br>");
 friends.shift(friends);
